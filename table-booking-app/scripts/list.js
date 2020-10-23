@@ -47,9 +47,3 @@ function GetBookings(){
           
         });
       }
-      
-      
-    });
-    }
-    
-    
