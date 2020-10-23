@@ -1,4 +1,4 @@
-let bookingList = document.getElementById("booking-list");
+
 document.addEventListener("load", function(){
     GetBookings();
 });
