@@ -1,5 +1,5 @@
-
 window.addEventListener("load", function(){
+document.addEventListener("load", function(){
     GetBookings();
 });
 
@@ -49,4 +49,7 @@ function GetBookings(){
       }
       
       
+    });
+    }
+    
     
