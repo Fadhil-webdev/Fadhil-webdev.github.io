@@ -49,7 +49,4 @@ function GetBookings(){
       }
       
       
-    });
-    }
-    
     
