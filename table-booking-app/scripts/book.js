@@ -1,5 +1,5 @@
 function BookNow(guestName, guestEmail, guestPax, guestRemarks) {
-    let url = 'https://api.apispreadsheets.com/data/2524/';
+    let url = "https://api.apispreadsheets.com/data/2524/";
     let body = {
         booking: {
             name: guestName,

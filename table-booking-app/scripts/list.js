@@ -3,7 +3,7 @@ window.addEventListener("load", function () {
 });
 
 function GetBookings() {
-  let url = 'https://api.apispreadsheets.com/data/2524/';
+  let url = "https://api.apispreadsheets.com/data/2524/";
   fetch(url)
       .then((response) => response.json())
       .then(json => {
@@ -48,7 +48,7 @@ function GetBookings() {
 function DeleteBooking(id) {
 
   if (confirm("Are you sure you want to delete?")) {
-      let url = 'https://api.apispreadsheets.com/data/2524/' + id;
+      let url = "https://api.apispreadsheets.com/data/2524/${id}";
       fetch(url, {
           method: 'DELETE',
       })
