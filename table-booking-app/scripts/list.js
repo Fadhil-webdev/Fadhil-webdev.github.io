@@ -3,7 +3,7 @@ window.addEventListener("load", function () {
 });
 
 function GetBookings() {
-    let url = 'https://api.apispreadsheets.com/data/2524/';
+    let url = 'https://api.sheety.co/9d217e1c2860acd3796d913f7180bcac/booking/bookings/';
     fetch(url)
         .then((response) => response.json())
         .then(json => {
@@ -12,7 +12,7 @@ function GetBookings() {
             var bookings = document.getElementById("booking-list");
             var bookingIds = [];
 
-            for (var i = 0; i < json.bookings.length; i++) {
+            for (var i = 0; i < json.bookings.length; i++){
                 var gName = json.bookings[i].name;
                 var gEmail = json.bookings[i].email;
                 var gPax = json.bookings[i].pax;
@@ -48,7 +48,7 @@ function GetBookings() {
 function DeleteBooking(id) {
 
     if (confirm("Are you sure you want to delete?")) {
-        let url = 'https://api.apispreadsheets.com/data/2524/' + id;
+        let url = 'https://api.sheety.co/9d217e1c2860acd3796d913f7180bcac/booking/bookings/' + id;
         fetch(url, {
             method: 'DELETE',
         })
