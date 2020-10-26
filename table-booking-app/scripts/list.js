@@ -35,15 +35,13 @@ function GetBookings(){
       }
       
       for (let j = 0; j < bookingIds.length; j++){
-        //console.log(bookingIds[j]);
+        
         let el = document.getElementById(bookingIds[j]);
-        //console.log("outside : " + j);
-        //console.log(typeof el);
+        
         el.addEventListener("click", function(){
         let theId = bookingIds[j].replace("delete", "");
         DeleteBooking(theId);
-        //console.log(theId);
-        //console.log("inside : " + j);
+        
           
         });
       }
@@ -51,4 +49,21 @@ function GetBookings(){
   });
 }
 })
+
+function DeleteBooking(id){
+
+  if(confirm("Are you sure you want to delete?")){
+    let url = 'https://api.sheety.co/9d217e1c2860acd3796d913f7180bcac/booking/bookings/' + id;
+    fetch(url, {
+      method: 'DELETE',
+      })
+      .then((response) => {
+      GetBookings();
+        
+      });
+  }else {
+    alert("delete cancelled");
+  }
+  
+}
 
