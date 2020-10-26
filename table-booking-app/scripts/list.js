@@ -11,7 +11,7 @@ function GetBookings(){
       //console.log(json.bookings);
       var bookings = document.getElementById("booking-list");
       var bookingIds = []
-            
+
       for(var i = 0; i < json.bookings.length; i++){
         var gName = json.bookings[i].name;
         var gEmail = json.bookings[i].email;
@@ -52,7 +52,7 @@ function GetBookings(){
 function DeleteBooking(id){
 
   if (confirm("Are you sure you want to delete?")) {
-    let url = 'https://api.sheety.co/9d217e1c2860acd3796d913f7180bcac/booking/bookings' + id;
+    let url = 'https://api.sheety.co/9d217e1c2860acd3796d913f7180bcac/booking/bookings/' + id;
     fetch(url, {
       method: 'DELETE',
       })
