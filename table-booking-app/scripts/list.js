@@ -4,7 +4,7 @@ document.addEventListener("load", function(){
 });
 
 function GetBookings(){
-    let url = 'https://api.sheety.co/9d217e1c2860acd3796d913f7180bcac/booking/bookings';
+    let url = 'https://dashboard.sheety.co/projects/5f89917939171526187b8ec4/sheets/bookings';
     fetch(url)
     .then((response) => response.json())
     .then(json => {
@@ -53,7 +53,7 @@ function GetBookings(){
 function DeleteBooking(id){
 
   if(confirm("Are you sure you want to delete?")){
-    let url = 'https://api.sheety.co/9d217e1c2860acd3796d913f7180bcac/booking/bookings/' + id;
+    let url = 'https://dashboard.sheety.co/projects/5f89917939171526187b8ec4/sheets/bookings' + id;
     fetch(url, {
       method: 'DELETE',
       })
