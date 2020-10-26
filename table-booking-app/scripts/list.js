@@ -52,20 +52,16 @@ function GetBookings(){
 
 function DeleteBooking(id){
 
-  if(confirm("Are you sure you want to delete?")){
+  if (confirm("Are you sure you want to delete?")) {
     let url = 'https://api.sheety.co/9d217e1c2860acd3796d913f7180bcac/booking/bookings' + id;
     fetch(url, {
       method: 'DELETE',
       })
-      .then((response) => {
-        let table = document.getElementById("booking-list");
-        for(let i = 1; i < table.rows.length; i++){
-            table.deleteRow(i);
-        }
-      GetBookings();
-        
-      });
-  }else {
+          .then((response) => {
+              location.reload();
+          });        
+      
+  } else {
     alert("Delete cancelled");
   }
   
