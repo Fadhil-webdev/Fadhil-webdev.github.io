@@ -48,7 +48,7 @@ function GetBookings(){
 
   });
 }
-})
+});
 
 function DeleteBooking(id){
 
