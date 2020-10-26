@@ -3,7 +3,7 @@ window.addEventListener("load", function(){
 });
 
 function GetBookings(){
-    let url = 'https://api.sheety.co/9d217e1c2860acd3796d913f7180bcac/booking/bookings';
+    let url = 'https://api.sheety.co/9d217e1c2860acd3796d913f7180bcac/booking/bookings/';
     fetch(url)
     .then((response) => response.json())
     .then(json => {
