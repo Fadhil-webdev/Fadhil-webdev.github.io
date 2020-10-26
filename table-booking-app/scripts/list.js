@@ -1,5 +1,4 @@
 window.addEventListener("load", function(){
-document.addEventListener("load", function(){
     GetBookings();
 });
 
@@ -35,12 +34,10 @@ function GetBookings(){
       }
       
       for (let j = 0; j < bookingIds.length; j++){
-        
-        let el = document.getElementById(bookingIds[j]);
-        
-        el.addEventListener("click", function(){
-        let theId = bookingIds[j].replace("delete", "");
-        DeleteBooking(theId);
+          let el = document.getElementById(bookingIds[j]);
+          el.addEventListener("click", function(){
+          let theId = bookingIds[j].replace("delete", "");
+          DeleteBooking(theId);
         
           
         });
@@ -48,7 +45,8 @@ function GetBookings(){
 
   });
 }
-});
+
+
 
 function DeleteBooking(id){
 
