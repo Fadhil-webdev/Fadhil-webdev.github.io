@@ -10,7 +10,8 @@ function GetBookings(){
       // Do something with the data
       //console.log(json.bookings);
       var bookings = document.getElementById("booking-list");
-      
+      var bookingIds = []
+            
       for(var i = 0; i < json.bookings.length; i++){
         var gName = json.bookings[i].name;
         var gEmail = json.bookings[i].email;
