@@ -21,7 +21,7 @@
     --gradient-color: linear-gradient(to right, var(--yellow-solid), var(--purple-light));
     --gradient-color-alt: linear-gradient(to right, var(--purple-light), var(--yellow-solid));
 }
-/*Global style*/
+/*Global styles*/
 html{
     font-size: 10px;
 }
@@ -111,7 +111,7 @@ section{
     z-index: 1400;
     opacity: 0;
     transform: scale(0);
-    transition: opacity.5s;
+    transition: opacity .5s;
 }
 
 .menu-open .nav-list{
