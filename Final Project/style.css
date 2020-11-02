@@ -132,3 +132,11 @@ section{
     letter-spacing: 2px;
     padding: 1rem;
 }
+
+/*Hero section styles*/
+.hero{
+    width: 100%;
+    height: 100vh;
+    background: url("./images/hero_background.jpg")
+
+}
