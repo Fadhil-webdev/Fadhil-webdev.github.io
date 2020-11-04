@@ -16,7 +16,7 @@
     <div class="container">
         <nav class="nav">
             <a href="index.html" class="logo">
-                <img src="./images/logo.png" height="50px" width="50px">
+                <img src="./images/logo.png">
             </a>
             <div class="hamburger-menu">
                 <i class="fas fa-bars"></i>
@@ -57,19 +57,48 @@
             </a>
         </div>
     </div>
-
+<!--Booking Section-->
     <section class="booking">
         <div class="container">
             <form action="" class="form">
-                <div class="input-group">
-                    <label for="destination" class="input-label">Destination</label>
-                    <input type="text" class="input" id="destination">
+                <div class="form-group">
+                    <label for="guestName" class="input-label">Name</label>
+                    <input type="text" class="input" id="name">
                 </div>
-                <div class="input-group">
-                    <label for="check-in" class="input-label">Check-in</label>
-                    <input type="date" class="input" id="check-in">
+                
+                
+                <div class="form-group">
+                    <label for="guestEmail" class="input-label">Email</label>
+                    <input type="text" class="input" id="guestEmail" placeholder="sample@example.com">
                 </div>
-                <div class="input-group">
+
+                <div class="form-group">
+                    <label for="guestPax">Pax</label>
+                    <select class="form-control" id="guestPax">
+                        <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                            <option>10</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="guestRemarks">Remarks</label>
+                    <textarea class="form-control" id="guestRemarks" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn form-btn btn-purple">
+                    <span class="dots"><i class="fas fa-ellipsis-h"></i></span>
+                </button>                    
+            </form>
+        </div>
+    </section>
+                <!--<div class="input-group">
                     <label for="check-out" class="input-label">Check-out</label>
                     <input type="date" class="input" id="check-out">
                 </div> 
@@ -95,13 +124,13 @@
                         <option value="0">5</option>
                     </select>
                 </div>
-                <button type="submit" class="btn form-btn btn-purple">Search
+                <button type="submit" class="btn form-btn btn-purple">
                     <span class="dots"><i class="fas fa-ellipsis-h"></i></span>
                 </button>   
             </form>
-
         </div>
-    </section>
+    </section>-->
+
     <section class="hotels">
         <div class="container">
             <h5 class="section-head">
@@ -202,32 +231,7 @@
                         <a href="#" class="btn rooms-btn">Book Now! &rarr;</a>
                     </div>
                 </div>
-                <div class="grid-item featured-rooms">
-                    <div class="image-wrap">
-                        <img class="room image" src="./images/room_2.jpg" alt="">
-                        <h5 class="room-name">Astro Hotel</h5>
-                    </div>
-                    <div class="room-info-wrap">
-                        <span class="room-price">RM 400.00 <span class="per-night">Per night</span></span>
-                        <p class="paragraph">
-                            put text here
-                        </p>
-                        <a href="#" class="btn rooms-btn">Book Now! &rarr;</a>
-                    </div>
-                </div>
-                <div class="grid-item featured-rooms">
-                    <div class="image-wrap">
-                        <img class="room image" src="./images/room_3.jpg" alt="">
-                        <h5 class="room-name">Astro Hotel</h5>
-                    </div>
-                    <div class="room-info-wrap">
-                        <span class="room-price">RM 400.00 <span class="per-night">Per night</span></span>
-                        <p class="paragraph">
-                            put text here
-                        </p>
-                        <a href="#" class="btn rooms-btn">Book Now! &rarr;</a>
-                    </div>
-                </div>
+                
                 <!--Enchanted Garden Info-->
                 <div class="grid-item featured-rooms">
                     <div class="image-wrap">
@@ -242,32 +246,7 @@
                         <a href="#" class="btn rooms-btn">Book Now! &rarr;</a>
                     </div>
                 </div>
-                <div class="grid-item featured-rooms">
-                    <div class="image-wrap">
-                        <img class="room image" src="./images/room_5.jpg" alt="">
-                        <h5 class="room-name">Enchanted Garden</h5>
-                    </div>
-                    <div class="room-info-wrap">
-                        <span class="room-price">RM 1,200.00 <span class="per-night">Per night</span></span>
-                        <p class="paragraph">
-                            put text here
-                        </p>
-                        <a href="#" class="btn rooms-btn">Book Now! &rarr;</a>
-                    </div>
-                </div>
-                <div class="grid-item featured-rooms">
-                    <div class="image-wrap">
-                        <img class="room image" src="./images/room_6.jpg" alt="">
-                        <h5 class="room-name">Enchanted Garden</h5>
-                    </div>
-                    <div class="room-info-wrap">
-                        <span class="room-price">RM 1,200.00 <span class="per-night">Per night</span></span>
-                        <p class="paragraph">
-                            put text here
-                        </p>
-                        <a href="#" class="btn rooms-btn">Book Now! &rarr;</a>
-                    </div>
-                </div>
+                             
                 <!--The Paradise Info-->
                 <div class="grid-item featured-rooms">
                     <div class="image-wrap">
@@ -282,37 +261,73 @@
                         <a href="#" class="btn rooms-btn">Book Now! &rarr;</a>
                     </div>
                 </div>
-                <div class="grid-item featured-rooms">
-                    <div class="image-wrap">
-                        <img class="room image" src="./images/room_8.jpg" alt="">
-                        <h5 class="room-name">The Paradise</h5>
-                    </div>
-                    <div class="room-info-wrap">
-                        <span class="room-price">RM 1,250.00 <span class="per-night">Per night</span></span>
-                        <p class="paragraph">
-                            put text here
-                        </p>
-                        <a href="#" class="btn rooms-btn">Book Now! &rarr;</a>
-                    </div>
+                           
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <div class="container">
+            <h5 class="section head">
+                <span class="heading">Contact</span>
+                <span class="sub-heading">Get in Touch With Us</span>
+            </h5>
+            <div class="contact-content">
+                <div class="traveler-wrap">
+                    <img src="./images/traveler.png" alt="">
                 </div>
-                <div class="grid-item featured-rooms">
-                    <div class="image-wrap">
-                        <img class="room image" src="./images/room_9.jpg" alt="">
-                        <h5 class="room-name">The Paradise</h5>
+                <form action="" class="form contact-form">
+                    <div class="input-group-wrap">
+                        <div class="input-group">
+                            <input type="text" class="input" placeholder="Name" required>
+                            <span class="bar"></span>
+                        </div>
+                        <div class="input-group">
+                            <input type="email" class="input" placeholder="Email" required>
+                            <span class="bar"></span>
+                        </div>
                     </div>
-                    <div class="room-info-wrap">
-                        <span class="room-price">RM 1,250.00 <span class="per-night">Per night</span></span>
-                        <p class="paragraph">
-                            put text here
-                        </p>
-                        <a href="#" class="btn rooms-btn">Book Now! &rarr;</a>
-                    </div>
-                </div>
+                        <div class="input-group">
+                            <input type="text" class="input" placeholder="subject" required>
+                            <span class="bar"></span>
+                        </div>
+                        <div class="input-group">
+                            <textarea class="input" cols="30" rows="8" placeholder="subject" required></textarea>
+                            <span class="bar"></span>
+                        </div>
+                        <button type="submit" class="btn form-btn btn-purple">Send Message
+                            <span class="dots"><i class="fas fa-ellipsis-h"></i></span>
+                        </button>
+                </form>
             </div>
         </div>
     </section>
 </main>
     
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-content-brand">
+                <a href="index.html" class="logo">
+                    <img class="logo-image" src="./images/logo.png" alt="">
+                </a>
+                <div class="paragraph div">
+                    put text here
+                </div>
+            </div>
+            <div class="social-media-wrap">
+                <h4 class="footer-heading">Follow Us</h4>
+                <div class="social-media">
+                    <a href="#" class="sm-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="sm-link"><i class="fab fa-facebook-square"></i></a>
+                    <a href="#" class="sm-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="sm-link"><i class="fab fa-pinterest"></i></a>
+                    <a href="#" class="sm-link"><i class="fab fa-tripadvisor"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
 </body>
 
 </html>
